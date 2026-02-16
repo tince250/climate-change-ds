@@ -1,0 +1,6 @@
+pycountry==24.6.1
+pandas==2.3.3
+numpy>=1.26.0
+seaborn==0.13.2
+matplotlib
+
