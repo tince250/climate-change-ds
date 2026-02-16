@@ -1,4 +1,5 @@
-# Source - https://www.iso.org/obp/ui/#search
+import pycountry
+
 iso3_codes = [
     'AFG', 'ALB', 'DZA', 'AND', 'AGO', 'ATG', 'ARG', 'ARM', 'AUS', 'AUT',
     'AZE', 'BHS', 'BHR', 'BGD', 'BRB', 'BLR', 'BEL', 'BLZ', 'BEN', 'BTN',
@@ -24,3 +25,23 @@ iso3_codes = [
 
 def is_country(iso3_code):
     return iso3_code in iso3_codes
+  
+def get_iso3(country_name):
+    try:
+        return pycountry.countries.lookup(country_name).alpha_3
+    except:
+        return None
+
+
+
+if __name__ == "__main__":
+    print(get_iso3('China'))
+    print(get_iso3('United States'))
+    print(get_iso3('Russia'))
+    print(get_iso3('Japan'))
+    print(get_iso3('Germany'))
+    print(get_iso3('India'))
+    print(get_iso3('United Kingdom'))
+    print(get_iso3('Saudi Arabia'))
+    print(get_iso3('Iran'))
+    print(get_iso3('France'))
