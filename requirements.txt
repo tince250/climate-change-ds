@@ -4,4 +4,8 @@ numpy>=1.26.0
 seaborn==0.13.2
 matplotlib
 scipy
+scikit-learn
+plotly
+nbformat>=4.2.0
+ipython
 
