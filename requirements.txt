@@ -7,3 +7,7 @@ matplotlib
 scipy
 scikit-learn
 prophet
+xgboost==3.2.0
+plotly
+nbformat>=4.2.0
+ipython
